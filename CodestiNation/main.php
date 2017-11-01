@@ -9,7 +9,8 @@
 	else {
 		echo '<p align="right"><font size="4" color="blue">Hello '.$_SESSION['username'].'!<br><a href ="./logout.php">LOGOUT</a></font></p>' ;
 	}
-	echo '<h3>Problem Archive: </h3><hr>' ;
+	echo '<h3 align="right"><a href="./activity.php">Recent Submissions</a></h3>' ;
+	echo '<h2>Problem Archive: </h2><hr>' ;
 	echo '<table align="center" cellspacing="100">
 			<tr>
 				<td><a href="./Problem_1/problem.php"><img src="question.jpg" /></a><br><p align="center"><strong>Problem 1<br>Watermelon</strong></p></td>

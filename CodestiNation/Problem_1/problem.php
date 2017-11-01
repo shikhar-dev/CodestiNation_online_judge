@@ -7,7 +7,9 @@
 		echo '<p align="right"><font size="4" ><a href="../login.php">LOG IN </a><strong>/</strong><a href="../signup.php"> SIGN UP</a></font></p>' ;
 	}
 	else {
-		echo '<p align="right"><font size="4" color="blue">Hello '.$_SESSION['username'].'!<br><a href ="../logout.php">LOGOUT</a></font></p>' ;
+		echo '<p align="right"><font size="4" color="blue">Hello '.$_SESSION['username'].'!<br>' ;
+		echo '<a href="./sub.php">Past Submissions</a></font></p>' ;
+		echo '<p align ="right"><a href ="../logout.php">LOGOUT</a></font></p>' ;
 	}
 	echo '<h3 align="right"><a href="../main.php">GO TO HOME PAGE<a></h3>	<h2>Problem Statement:</h2>' ;
 	echo '<p ><font size="5">One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.</font></p>' ;

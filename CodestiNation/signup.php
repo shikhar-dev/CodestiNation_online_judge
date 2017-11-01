@@ -6,7 +6,8 @@
 	echo '<form action="sg1.php" method="POST">
 			<h4>FILL DETAILS : </h4> <br>
 			<p align="center"><font size="4" color="blue">Username : <input type="text" name="username" value=""><br><br>
-			Password  : <input type="password" name="password" value=""><br><br> 
+			Password  : <input type="password" name="password" value=""><br><br>
+			Confirm Password  : <input type="password" name="cpassword" value=""><br><br> 
 			Full Name : <input type="text" name="name" value=""><br><br>
 			Mail ID : <input type="text" name="mail" value=""><br><br>
 			<input type="submit" name="submit" value="submit"></font></p>

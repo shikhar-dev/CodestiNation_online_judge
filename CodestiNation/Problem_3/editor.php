@@ -1,5 +1,5 @@
 <?php
-if(!session_id()) session_start();
+	if(!session_id()) session_start();
 	if(!isset($_SESSION['username'])) {
 		echo '<p align="right"><font size="4" ><a href="../login.php">LOG IN </a><strong>/</strong><a href="../signup.php"> SIGN UP</a></font></p>' ;
 	}

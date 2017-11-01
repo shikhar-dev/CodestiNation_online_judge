@@ -1,4 +1,5 @@
 <?php
+	if(!session_id()) session_start();
 	$hout = fopen("./out.txt","r") ;
 	if (!$hout) {
 		exit('error in opening') ;
@@ -19,9 +20,11 @@
 	}
 	if ($sout == $sout1) {
 		echo '<hr/>'.'<img src = "./accepted.png" hspace="600" vspace="280" />'.'<hr/>' ;  
+		$_SESSION['verdict']=0 ;
 	}
 	else {
 		echo '<hr/>'.'<img src = "./wrong.png" hspace="650" vspace="300" />'.'<hr/>' ; 
+		$_SESSION['verdict']=1 ;
 	}
 	echo '<a href = "./problem.php">GO BACK </a>' ;
 	fclose($hout1) ;

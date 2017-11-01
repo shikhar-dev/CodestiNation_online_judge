@@ -1,5 +1,5 @@
 <?php 
-	echo '<h1 align = "center">Problem 1: Just Add</h1>
+	echo '<h1 align = "center">Problem 2: Just Add</h1>
 		 <h2 align = "center">input: standard input<br>
 		 output: standard output</h2>' ;
 	if(!session_id()) session_start();
@@ -7,7 +7,9 @@
 		echo '<p align="right"><font size="4" ><a href="../login.php">LOG IN </a><strong>/</strong><a href="../signup.php"> SIGN UP</a></font></p>' ;
 	}
 	else {
-		echo '<p align="right"><font size="4" color="blue">Hello '.$_SESSION['username'].'!<br><a href ="../logout.php">LOGOUT</a></font></p>' ;
+		echo '<p align="right"><font size="4" color="blue">Hello '.$_SESSION['username'].'!<br>' ;
+		echo '<a href="./sub.php">Past Submissions</a></font></p>' ;
+		echo '<p align ="right"><a href ="../logout.php">LOGOUT</a></font></p>' ;
 	}
 	echo '<h3 align="right"><a href="../main.php">GO TO HOME PAGE<a></h3>	<h2>Problem Statement:</h2>' ;
 	echo '<p ><font size="5">This problem is pretty easy. All you need to do is to find the total number of chocolates that Tim and Ben have.</font></p>' ;

@@ -10,9 +10,13 @@
 		if ($result->fetch_array()) {
 			echo 'Username already exists! Choose a different one.<br>' ;
 			echo '<a href="./signup.php">GO BACK</a>' ;
+		}
+		else if ($_POST['password'] != $_POST['cpassword']) {
+			echo 'Passwords do not match! Please fill the form again.<br>' ;
+			echo '<a href="./signup.php">GO BACK</a>' ;
 		} 
 		else {
-			$sql = "INSERT INTO user_pass values(" .$usr. ',' .$pass. ',' .$nm. ',' .$m. ')' ;
+			$sql = "INSERT INTO user_pass values(" .$usr. ',' .$pass. ',' .$nm. ',' .$m. ',0)' ;
 			if ($db->query($sql) == true) {
 				@mkdir("./user_info/".$_POST['username']) ;
 				echo 'Account created!<br>' ;
