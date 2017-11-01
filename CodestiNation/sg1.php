@@ -18,7 +18,7 @@
 		else {
 			$sql = "INSERT INTO user_pass values(" .$usr. ',' .$pass. ',' .$nm. ',' .$m. ',0)' ;
 			if ($db->query($sql) == true) {
-				@mkdir("./user_info/".$_POST['username']) ;
+				@mkdir("./user_info/".$_POST['username'],0777,true) ;
 				echo 'Account created!<br>' ;
 				echo '<a href="./main.php">GO BACK</a>' ;
 			}
