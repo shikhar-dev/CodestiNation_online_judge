@@ -13,7 +13,7 @@
 			move_uploaded_file($_FILES['upload']['tmp_name'],'./'.'asd.cpp') ;
 			echo '<h3 align="center">Upload Successful!</h3>' ;
 			echo '<h3 align="center">Running . . .</h3>' ;
-			shell_exec('g++ asd.cpp -o asd') ;
+			shell_exec('C:\MinGW\bin\g++ asd.cpp -o asd') ;
 			if (!is_file("./asd.exe")) {
 				echo '<hr/>'.'<img src = "./compile.png" hspace="650" vspace="300" />'.'<hr/>' ;
 				echo '<a href = "./problem.php">GO BACK </a>' ;
